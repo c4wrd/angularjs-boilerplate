@@ -1,0 +1,24 @@
+<div ng-cloak>
+  <md-content>
+    <section layout="row">
+      <md-toolbar>
+        <div layout-margin>
+          <h3>{{vm.title}}</h3>
+        </div>
+      </md-toolbar>
+    </section>
+    <section layout="row" layout-padding>
+        <div class="container">
+          <h1>Wikipedia Search (Rx)</h1>
+          <md-input-container>
+            <label>Search Term</label>
+            <input ng-model="vm.search_term">
+          </md-input-container>
+          <md-button class="md-raised" ng-click="click()">Search</md-button>
+          <ul>
+            <li ng-repeat="result in vm.results">{{result}}</li>
+          </ul>
+        </div>
+      </section>
+  </md-content>
+</div>
