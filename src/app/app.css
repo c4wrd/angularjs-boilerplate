@@ -1,0 +1,15 @@
+.result.ng-enter {
+    transition: 0.2s ease-in;
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+.result.ng-enter.ng-enter-active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.result.ng-enter-stagger {
+    transition-delay: 0.05s;
+    transition-duration: 0s;
+}

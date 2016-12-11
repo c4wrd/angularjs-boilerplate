@@ -2,6 +2,8 @@ import angular from 'angular';
 
 const MODULE_NAME = 'app';
 
+require("./app.css");
+
 // es6 class version of controller
 /*class AppController {
   constructor($scope) {
@@ -9,7 +11,7 @@ const MODULE_NAME = 'app';
   }
 }*/
 
-angular.module(MODULE_NAME, ['rx', 'ngMaterial'])
+angular.module(MODULE_NAME, ['rx', 'ngMaterial', 'ngAnimate'])
   .component('app', {
     controller: "AppController",
     controllerAs: "vm",
